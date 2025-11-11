@@ -1,0 +1,2 @@
+# projeto-safevoice
+O SafeVoice é um projeto desenvolvido por alunos do 2º período do IFPE, com o objetivo de criar uma ferramenta tecnológica voltada à segurança e bem-estar dos usuários. A proposta surgiu a partir da necessidade de oferecer um meio rápido, acessível e eficiente de comunicação em situações de risco, permitindo que o usuário envie alertas, registre ocorrências ou peça ajuda de forma discreta e segura.
