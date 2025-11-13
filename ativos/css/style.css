@@ -1,0 +1,211 @@
+body {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======== Cabeçalho ======== */
+header.header {
+  background-color: #0d6efd;
+  color: white;
+  padding: 15px 0;
+}
+
+header .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .sitename {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navmenu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navmenu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navmenu a:hover,
+.navmenu a.active {
+  text-decoration: underline;
+}
+
+/* ======== Botão CTA ======== */
+.cta-btn {
+  background-color: #198754;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #157347;
+  color: white;
+}
+
+/* ======== Seção Banner ======== */
+.secao_banner {
+  background-image: url('../midia/banner_fundo01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; /* Centraliza a imagem */
+  background-attachment: fixed; /* Dá um leve efeito de parallax */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Camada de escurecimento para melhor contraste */
+.secao_banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+.secao_banner h2,
+.secao_banner p {
+  position: relative;
+  z-index: 1;
+}
+
+.secao_banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.secao_banner p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* ======== Seções Gerais ======== */
+section {
+  padding: 80px 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  color: #0d6efd;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* ======== Seção Tipos ======== */
+.secao_tipos {
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.tipo-item {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  transition: 0.3s;
+  display: inline-block;
+  width: 280px;
+  vertical-align: top;
+}
+
+.tipo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tipo-item i {
+  font-size: 2.2rem;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.tipo-item h3 {
+  margin-bottom: 10px;
+  color: #212529;
+}
+
+/* ======== Seção Acompanhe ======== */
+.secao_cammpanha {
+  background: #eef3ff;
+}
+
+.campanha-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ======== Rodapé ======== */
+footer.footer {
+  background-color: #0b1e39; /* Azul escuro elegante */
+  color: #d9e2f1;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+footer .sitename {
+  color: white;
+  font-weight: 600;
+}
+
+footer a {
+  color: #5ea1ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
