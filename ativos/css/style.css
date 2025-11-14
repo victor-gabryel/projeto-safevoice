@@ -158,7 +158,7 @@ section {
   color: #212529;
 }
 
-/* ======== Seção Acompanhe ======== */
+/* ======== Seção Campanha ======== */
 .secao_cammpanha {
   background: #eef3ff;
 }
@@ -184,6 +184,49 @@ section {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
+
+/* ======== FAQ Interativo ======== */
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.faq-question i {
+  margin-right: 8px;
+}
+
+.faq-question .arrow {
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active .arrow {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer p {
+  margin: 10px 0 0 0;
+}
+
 
 /* ======== Rodapé ======== */
 footer.footer {
