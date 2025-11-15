@@ -24,19 +24,22 @@
 //     .then(html => document.body.insertAdjacentHTML('beforeend', html));
 
 
-// Seção Dúvidas
-const faqQuestions = document.querySelectorAll(".faq-question");
+// ======== FAQ Interativo ========
+document.addEventListener('DOMContentLoaded', () => {
+  const perguntas = document.querySelectorAll('.pergunta-faq');
 
-faqQuestions.forEach(btn => {
-    btn.addEventListener("click", () => {
-        btn.classList.toggle("active");
+  perguntas.forEach(pergunta => {
+    pergunta.addEventListener('click', () => {
+      // Alterna classe ativa no botão
+      pergunta.classList.toggle('active');
 
-        const answer = btn.nextElementSibling;
-
-        if (btn.classList.contains("active")) {
-            answer.style.maxHeight = answer.scrollHeight + "px";
-        } else {
-            answer.style.maxHeight = 0;
-        }
+      // Mostra ou esconde a resposta correspondente
+      const resposta = pergunta.nextElementSibling;
+      if (resposta.style.maxHeight) {
+        resposta.style.maxHeight = null;
+      } else {
+        resposta.style.maxHeight = resposta.scrollHeight + "px";
+      }
     });
+  });
 });
