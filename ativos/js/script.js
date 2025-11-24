@@ -171,3 +171,26 @@ document.addEventListener('DOMContentLoaded', () => {
 /* =========================================
    FORM DENUNCIA
 ========================================= */
+function EnviarDenuncia() {
+    // Pegar os elementos do formulário
+    const titulo = document.getElementById('tituloDenuncia').value.trim();
+    const descricao = document.getElementById('descricaoDenuncia').value.trim();
+    const categoria = document.getElementById('categoriaSelect').value;
+    const data = document.getElementById('dataIncidente').value;
+    const local = document.getElementById('localIncidente').value.trim();
+    const checkbox = document.getElementById('checkAnonimo');
+
+    // Checar se tudo foi preenchido e o checkbox marcado
+    if (!titulo || !descricao || !categoria || !data || !local) {
+        alert("Por favor, preencha todos os campos obrigatórios.");
+        return false;
+    }
+
+    if (!checkbox.checked) {
+        alert("Você precisa concordar em fazer a denúncia de forma anônima.");
+        return false;
+    }
+
+    alert("Denúncia enviada com sucesso!");
+ 
+}
