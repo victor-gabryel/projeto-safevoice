@@ -1,0 +1,65 @@
+<div id="FormDenun" class="FormatoModals">
+    <div class="conteudo-form">
+        <span class="fechar" onclick="fechar_FormDenun()">&times;</span>
+
+        <h2 class="mb-4">Formulário de Denúncia</h2>
+
+        <form>
+
+            <!-- Título -->
+            <div class="form-group mb-3">
+                <label for="tituloDenuncia">Título</label>
+                <input type="text" class="form-control" id="tituloDenuncia" placeholder="Digite um título">
+            </div>
+
+            <!-- Descrição -->
+            <div class="form-group mb-3">
+                <label for="descricaoDenuncia">Descrição</label>
+                <textarea class="form-control" id="descricaoDenuncia" rows="4" placeholder="Descreva o ocorrido..."></textarea>
+            </div>
+
+            <!-- Categoria -->
+            <div class="form-group mb-3">
+                <label for="categoriaSelect">Categoria</label>
+                <select class="form-control" id="categoriaSelect">
+                    <option selected disabled>Selecione uma categoria</option>
+                    <option value="1">Agressão</option>
+                    <option value="2">Bullying</option>
+                    <option value="3">Discriminação</option>
+                    <option value="4">Ameaça</option>
+                    <option value="5">Outros</option>
+                </select>
+            </div>
+
+            <!-- Data do Incidente -->
+            <div class="form-group mb-3">
+                <label for="dataIncidente">Data do Incidente</label>
+                <input type="date" class="form-control" id="dataIncidente">
+            </div>
+
+            <!-- Local do incidente -->
+            <div class="form-group mb-3">
+                <label for="localIncidente">Local do Incidente</label>
+                <input type="text" class="form-control" id="localIncidente" placeholder="Ex: Rua conceição, Escola Alberto Torres">
+            </div>
+
+            <!-- Anexar Arquivo -->
+            <div class="form-group mb-3">
+                <label class="mb-1">Anexar Arquivo</label>
+                <input type="file" class="form-control" id="arquivoAnexo">
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check mb-4">
+                <input type="checkbox" class="form-check-input" id="checkAnonimo">
+                <label class="form-check-label" for="checkAnonimo">
+                    Concordo em fazer a denúncia de forma anônima
+                </label>
+            </div>
+
+            <!-- Botão Enviar -->
+            <button type="submit" class="btn btn-primary w-100">Enviar Denúncia</button>
+
+        </form>
+    </div>
+</div>
