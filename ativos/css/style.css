@@ -24,7 +24,7 @@ body {
    CABEÇALHO (HEADER)
 ========================================= */
 header.cabecalho {
-  background-color: #0d6efd;
+  background-color: #1755b2f1;
   color: white;
   padding: 15px 0;
 }
@@ -128,9 +128,9 @@ header .nome-do-site {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 120px 20px;
+  padding: 0 20px;       /* Remove o padding superior */
   width: 100%;
-  height: 100vh;
+  height: 100vh;         /* Ocupa toda a altura da tela */
   text-align: center;
   color: white;
   position: relative;
@@ -162,6 +162,7 @@ header .nome-do-site {
   font-size: 1.1rem;
   margin-bottom: 25px;
 }
+
 
 
 
