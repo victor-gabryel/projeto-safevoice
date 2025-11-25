@@ -37,36 +37,19 @@ function fecharModal(idModal) {
 
 
 
-// /* =========================================
-//    FECHAR MODAL CLICANDO FORA DO CONTEÚDO
-// ========================================= */
-// window.addEventListener("click", function (event) {
-//   const modais = document.querySelectorAll(".FormatoModals");
+/* =========================================
+   FECHAR MODAL CLICANDO FORA DO CONTEÚDO
+========================================= */
+window.addEventListener("click", function (event) {
+  const modais = document.querySelectorAll(".FormatoModals");
 
-//   modais.forEach(modal => {
-//     if (event.target === modal) {
-//       modal.style.display = "none";
-//       liberarScrollPagina();
-//     }
-//   });
-// });
-
-// /* =========================================
-//    FECHAR MODAL COM A TECLA ESC
-// ========================================= */
-// document.addEventListener("keydown", function (event) {
-//   if (event.key === "Escape") {
-//     const modais = document.querySelectorAll(".FormatoModals");
-
-//     modais.forEach(modal => {
-//       if (modal.style.display === "flex") {
-//         modal.style.display = "none";
-//       }
-//     });
-
-//     liberarScrollPagina();
-//   }
-// });
+  modais.forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      liberarScrollPagina();
+    }
+  });
+});
 
 
 
@@ -147,28 +130,6 @@ fetch('componentes/ModalAssedio.html')
 
 
 /* =========================================
-   FAQ INTERATIVO
-========================================= */
-document.addEventListener('DOMContentLoaded', () => {
-  const perguntas = document.querySelectorAll('.pergunta-faq');
-
-  perguntas.forEach(pergunta => {
-    pergunta.addEventListener('click', () => {
-      pergunta.classList.toggle('active');
-
-      const resposta = pergunta.nextElementSibling;
-      if (resposta) {
-        resposta.style.maxHeight = resposta.style.maxHeight
-          ? null
-          : resposta.scrollHeight + "px";
-      }
-    });
-  });
-});
-
-
-
-/* =========================================
    FORM DENUNCIA
 ========================================= */
 function EnviarDenuncia() {
@@ -192,5 +153,4 @@ function EnviarDenuncia() {
     }
 
     alert("Denúncia enviada com sucesso!");
- 
 }
