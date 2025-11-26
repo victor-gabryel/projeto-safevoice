@@ -76,7 +76,7 @@ section {
 /* =========================================
    CABEÇALHO (HEADER)
 ========================================= */
-header.cabecalho {
+header.secao-cabecalho {
   background-color: #1755b2f1;
   color: white;
   padding: 15px 0;
