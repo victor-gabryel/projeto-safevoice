@@ -84,10 +84,6 @@ header.secao-cabecalho {
 
 header .container {
   width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 header .nome-do-site {
