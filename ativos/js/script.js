@@ -14,7 +14,6 @@ function liberarScrollPagina() {
 /* =========================================
    FUNÇÕES UNIVERSAIS PARA ABRIR E FECHAR MODAIS
 ========================================= */
-// Abre qualquer modal pelo ID
 function abrirModal(idModal) {
   const modal = document.getElementById(idModal);
   if (!modal) return;
@@ -22,11 +21,9 @@ function abrirModal(idModal) {
   modal.style.display = "flex";
   travarScrollPagina();
 
-  // Salvar no localStorage qual modal foi aberto
   localStorage.setItem("ultimo_modal_aberto", idModal);
 }
 
-// Fecha qualquer modal pelo ID
 function fecharModal(idModal) {
   const modal = document.getElementById(idModal);
   if (!modal) return;
@@ -133,7 +130,6 @@ fetch('componentes/ModalAssedio.html')
    FORM DENUNCIA
 ========================================= */
 function EnviarDenuncia() {
-    // Pegar os elementos do formulário
     const titulo = document.getElementById('tituloDenuncia').value.trim();
     const descricao = document.getElementById('descricaoDenuncia').value.trim();
     const categoria = document.getElementById('categoriaSelect').value;
@@ -141,7 +137,6 @@ function EnviarDenuncia() {
     const local = document.getElementById('localIncidente').value.trim();
     const checkbox = document.getElementById('checkAnonimo');
 
-    // Checar se tudo foi preenchido e o checkbox marcado
     if (!titulo || !descricao || !categoria || !data || !local) {
         alert("Por favor, preencha todos os campos obrigatórios.");
         return false;
