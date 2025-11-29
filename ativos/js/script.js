@@ -20,8 +20,6 @@ function abrirModal(idModal) {
 
   modal.style.display = "flex";
   travarScrollPagina();
-
-  localStorage.setItem("ultimo_modal_aberto", idModal);
 }
 
 function fecharModal(idModal) {
@@ -53,23 +51,31 @@ window.addEventListener("click", function (event) {
 /* =========================================
    FUNÇÕES ESPECÍFICAS (COMPATIBILIDADE)
 ========================================= */
+// Mordal Form
 function abrir_FormDenun() { abrirModal("FormDenun"); }
 function fechar_FormDenun() { fecharModal("FormDenun"); }
 
-function abrir_ModalViolencia() { abrirModal("ModalViolencia"); }
-function fechar_ModalViolencia() { fecharModal("ModalViolencia"); }
+// Modal Assédio
+function abrir_ModalAssedio() { abrirModal("ModalAssedio"); }
+function fechar_ModalAssedio() { fecharModal("ModalAssedio"); }
 
+// Modal Bullying
 function abrir_ModalBullying() { abrirModal("ModalBullying"); }
 function fechar_ModalBullying() { fecharModal("ModalBullying"); }
 
+// Modal Corrupcao
 function abrir_ModalCorrupcao() { abrirModal("ModalCorrupcao"); }
 function fechar_ModalCorrupcao() { fecharModal("ModalCorrupcao"); }
 
+// Modal Dicriminacao
 function abrir_ModalDiscriminacao() { abrirModal("ModalDiscriminacao"); }
 function fechar_ModalDiscriminacao() { fecharModal("ModalDiscriminacao"); }
 
-function abrir_ModalAssedio() { abrirModal("ModalAssedio"); }
-function fechar_ModalAssedio() { fecharModal("ModalAssedio"); }
+// Modal Violencia
+function abrir_ModalViolencia() { abrirModal("ModalViolencia"); }
+function fechar_ModalViolencia() { fecharModal("ModalViolencia"); }
+
+
 
 
 

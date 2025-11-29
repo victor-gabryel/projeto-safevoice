@@ -125,18 +125,8 @@ header .nome-do-site {
 /* =========================================
    SEÇÃO SOBRE
 ========================================= */
-.secao-sobre .linha {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 .secao-sobre p {
   text-align: justify;
-}
-
-.secao-sobre .coluna-lg-6 {
-  flex: 0 0 48%;
 }
 
 .secao-sobre .conteudo ul {
@@ -222,12 +212,10 @@ header .nome-do-site {
   background: white;
   padding: 25px;
   border-radius: 12px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: 0.3s ease-in-out;
 }
