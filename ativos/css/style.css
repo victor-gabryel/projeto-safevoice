@@ -335,7 +335,21 @@ header .nome-do-site {
 /* =========================================
    SEÇÃO CAMPANHA
 ========================================= */
+.btn-primary {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
+.btn-primary:hover {
+    background-color: #ee5a52;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
 
 
 /* =========================================
