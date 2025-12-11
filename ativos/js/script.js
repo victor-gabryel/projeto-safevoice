@@ -137,21 +137,21 @@ document.addEventListener('DOMContentLoaded', function() {
 function carregarConteudoDoMes() {
     // Pega o mês atual (0 = Janeiro, 11 = Dezembro)
     const mesAtual = new Date().getMonth();
-    
     let conteudo = {};
     
     // Switch case para cada mês
     switch(mesAtual) {
         case 0: // Janeiro
             conteudo = {
-                titulo: "Março Azul-Marinho e Lilás: Cuidar da Saúde é um Ato de Amor",
-                descricao1: "O Março Azul-Marinho e Lilás é dedicado à conscientização sobre a prevenção e o diagnóstico precoce de importantes tipos de câncer. O Azul-Marinho reforça a atenção ao câncer colorretal, incentivando hábitos saudáveis, exames regulares e o cuidado com sintomas muitas vezes negligenciados. Já o Lilás destaca o câncer do colo do útero, lembrando a importância da vacinação contra o HPV e da realização periódica do exame preventivo (Papanicolau). Ao abordar esses temas de forma clara e responsável, o Março Azul-Marinho e Lilás convida a população a vencer o medo, buscar informação de qualidade e assumir um papel ativo no cuidado com a própria saúde, porque prevenir e se cuidar é um ato de amor à vida.",
+                titulo: "Janeiro Branco: Cuidar da Mente é Cuidar da Vida",
+                descricao1: "O Janeiro Branco é uma campanha dedicada à conscientização sobre a saúde mental e emocional. O início do ano simboliza novos ciclos, momentos de reflexão e de reorganização da vida, tornando-se um período ideal para incentivar o autocuidado, a busca por equilíbrio emocional e a quebra de tabus sobre transtornos mentais. A campanha reforça a importância de falar sobre sentimentos, procurar ajuda profissional quando necessário e construir uma cultura de empatia e acolhimento. Cuidar da mente é tão essencial quanto cuidar do corpo — é um ato de amor consigo mesmo.",
                 descricao2: "",
                 imagem: "ativos/midia/janeiro.webp",
                 textoBotao: "Saiba Mais",
                 linkBotao: "https://www.gov.br/inss/pt-br/noticias/janeiro-branco-mes-de-conscientizacao-pela-saude-mental-e-emocional"
             };
             break;
+
             
         case 1: // Fevereiro
             conteudo = {
