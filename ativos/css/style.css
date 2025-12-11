@@ -74,27 +74,23 @@ section {
 
 
 /* =========================================
-   MENU MOBILE AJUSTADO
+   MENU MOBILE
 ========================================= */
-
-/* Largura personalizada do menu mobile */
 #menuMobile {
-  width: 260px !important;   /* ajuste como quiser */
-  max-width: 80%;            /* evita ocupar toda a tela */
+  width: 260px !important;
+  max-width: 50%;        
 }
 
-/* Remove qualquer padding exagerado */
 #menuMobile .offcanvas-body {
   padding: 1.2rem;
 }
 
-/* Lista do menu */
 .lista-sem-estilo-mobile li a {
   font-size: 1.1rem;
   display: block;
   padding: 10px 0;
   text-decoration: none;
-  color: #007bff; /* azul padrão Bootstrap */
+  color: #007bff;
   transition: 0.3s;
 }
 
