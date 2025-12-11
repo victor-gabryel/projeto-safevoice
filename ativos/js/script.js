@@ -82,21 +82,13 @@ function fechar_ModalViolencia() { fecharModal("ModalViolencia"); }
 /* =========================================
    FETCH DOS MODAIS (CARREGAMENTO DINÂMICO)
 ========================================= */
-// Formulário de denúncia
-fetch('componentes/FormDenun.html')
-  .then(response => response.text())
-  .then(html => {
-    const container = document.getElementById('FormDenunContainer');
-    if (container) container.innerHTML = html;
-  });
-
 // Modal Violência
 fetch('componentes/ModalViolencia.html')
   .then(response => response.text())
   .then(html => {
     const container = document.getElementById('ModalViolenciaContainer');
     if (container) container.innerHTML = html;
-  });
+});
 
 // Modal Bullying
 fetch('componentes/ModalBullying.html')
@@ -104,7 +96,7 @@ fetch('componentes/ModalBullying.html')
   .then(html => {
     const container = document.getElementById('ModalBullyingContainer');
     if (container) container.innerHTML = html;
-  });
+});
 
 // Modal Corrupção
 fetch('componentes/ModalCorrupcao.html')
@@ -112,7 +104,7 @@ fetch('componentes/ModalCorrupcao.html')
   .then(html => {
     const container = document.getElementById('ModalCorrupcaoContainer');
     if (container) container.innerHTML = html;
-  });
+});
 
 // Modal Discriminação
 fetch('componentes/ModalDiscriminacao.html')
@@ -120,7 +112,7 @@ fetch('componentes/ModalDiscriminacao.html')
   .then(html => {
     const container = document.getElementById('ModalDiscriminacaoContainer');
     if (container) container.innerHTML = html;
-  });
+});
 
 // Modal Assédio
 fetch('componentes/ModalAssedio.html')
@@ -128,7 +120,7 @@ fetch('componentes/ModalAssedio.html')
   .then(html => {
     const container = document.getElementById('ModalAssedioContainer');
     if (container) container.innerHTML = html;
-  });
+});
 
 
 

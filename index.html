@@ -221,13 +221,6 @@
 
   </main>
 
-  <!-- Corrigir -->
-  <!-- Botão Formulário -->
-  <div>
-    <a class="botao-flutuante" onclick="abrir_FormDenun()">Denunciar</a>
-    <div id="FormDenunContainer"></div>
-  </div>
-
 
 
   <!-- =========================================
@@ -246,6 +239,27 @@
     </div>
   </footer>
 
+
+
+  <!-- =========================================
+        BOTÃO FORMDENUN
+  ========================================== -->
+  <!-- Botão Flutuante -->
+  <button class="botao-flutuante" onclick="abrir_FormDenun()">
+      Denunciar
+  </button>
+  <!-- Container onde o modal será carregado pelo fetch -->
+  <div id="FormDenunContainer"></div>
+  <script>
+      // Carrega o modal no container
+      fetch('componentes/FormDenun.html')
+          .then(response => response.text())
+          .then(html => {
+              const container = document.getElementById('FormDenunContainer');
+              if (container) container.innerHTML = html;
+          })
+          .catch(err => console.error("Erro ao carregar FormDenun:", err));
+  </script>
 
   
   <!-- Bootstrap JS -->
