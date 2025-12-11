@@ -57,7 +57,7 @@ section {
   font-weight: 600;
   font-size: 16px;
   color: #fff;
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  background: linear-gradient(135deg, #0d6efd, #1755b2f1);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
   border: none;
   cursor: pointer;
@@ -68,7 +68,7 @@ section {
 .botao-flutuante:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+  background: linear-gradient(135deg, #1755b2f1, #0d6efd);
 }
 
 
