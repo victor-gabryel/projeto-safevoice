@@ -77,8 +77,8 @@ section {
    MENU MOBILE
 ========================================= */
 #menuMobile {
-  width: 260px !important;
-  max-width: 50%;        
+  width: 50% !important;
+  max-width: 50% !important;
 }
 
 #menuMobile .offcanvas-body {
